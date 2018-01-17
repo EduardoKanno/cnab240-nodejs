@@ -1,5 +1,5 @@
 module.exports = [
-	{
+    {
         field: 'banco'
         startPos: 1
         endPos: 3

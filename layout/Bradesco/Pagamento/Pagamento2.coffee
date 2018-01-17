@@ -1,5 +1,5 @@
 module.exports = [
-	{
+    {
         field: 'banco'
         startPos: 1
         endPos: 3
@@ -137,7 +137,7 @@ module.exports = [
         required: true
         type: 'numeric'
     }
-	{
+    {
         field: 'valor_documento'
         startPos: 136
         endPos: 150
@@ -145,7 +145,7 @@ module.exports = [
         required: true
         type: 'numeric'
     }
-	{
+    {
         field: 'valor_abatimento'
         startPos: 151
         endPos: 165
@@ -153,7 +153,7 @@ module.exports = [
         required: false
         type: 'numeric'
     }
-	{
+    {
         field: 'valor_desconto'
         startPos: 166
         endPos: 180
@@ -161,7 +161,7 @@ module.exports = [
         required: false
         type: 'numeric'
     }
-	{
+    {
         field: 'valor_mora'
         startPos: 181
         endPos: 195
@@ -177,7 +177,7 @@ module.exports = [
         required: false
         type: 'numeric'
     }
-	{
+    {
         field: 'cod_doc_favorecido'
         startPos: 211
         endPos: 225
@@ -185,7 +185,7 @@ module.exports = [
         required: false
         type: 'alphanumeric'
     }
-	{
+    {
         field: 'aviso_ao_favorecido'
         startPos: 226
         endPos: 226
@@ -193,20 +193,20 @@ module.exports = [
         required: false
         type: 'numeric'
     }
-	{
+    {
         field: 'filler'
         startPos: 227
         endPos: 232
         length: 6
         required: false
-		default: new Array(6).fill(' ').join('')
+        default: new Array(6).fill(' ').join('')
     }
-	{
+    {
         field: 'codigo_ispb'
         startPos: 233
         endPos: 240
         length: 8
         required: false
-		default: new Array(8).fill(' ').join('')
+        default: new Array(8).fill(' ').join('')
     }
 ]

@@ -3,15 +3,12 @@
   "version": "0.1.0",
   "description": "Gerador de arquivo de remessa padrão CNAB 240 / HSBC",
   "main": "main.js",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "query builder",
     "mysql"
   ],
   "author": "Newborns/S2Way",
-  "devDependencies": {
-  },
-  "dependencies": {
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }

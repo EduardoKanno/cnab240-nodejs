@@ -1,24 +1,24 @@
 module.exports = {
     HSBC: {
-        ArquivoHeader: require('./HSBC/ArquivoHeader.coffee'),
-        ArquivoTrailing: require('./HSBC/ArquivoTrailing.coffee'),
+        ArquivoHeader: require('./HSBC/ArquivoHeader.js'),
+        ArquivoTrailing: require('./HSBC/ArquivoTrailing.js'),
         Pagamento: {
-            LoteHeader: require('./HSBC/Pagamento/LoteHeader.coffee'),
-            LoteTrailing: require('./HSBC/Pagamento/LoteTrailing.coffee'),
-            Detail: require('./HSBC/Pagamento/Pagamento.coffee'),
-            Detail2: require('./HSBC/Pagamento/Pagamento2.coffee'),
-            Constants: require('./HSBC/Pagamento/Constants.coffee')
+            LoteHeader: require('./HSBC/Pagamento/LoteHeader.js'),
+            LoteTrailing: require('./HSBC/Pagamento/LoteTrailing.js'),
+            Detail: require('./HSBC/Pagamento/Pagamento.js'),
+            Detail2: require('./HSBC/Pagamento/Pagamento2.js'),
+            Constants: require('./HSBC/Pagamento/Constants.js')
         }
     },
     Bradesco: {
-        ArquivoHeader: require('./Bradesco/ArquivoHeader.coffee'),
-        ArquivoTrailing: require('./Bradesco/ArquivoTrailing.coffee'),
+        ArquivoHeader: require('./Bradesco/ArquivoHeader.js'),
+        ArquivoTrailing: require('./Bradesco/ArquivoTrailing.js'),
         Pagamento: {
-            LoteHeader: require('./Bradesco/Pagamento/LoteHeader.coffee'),
-            LoteTrailing: require('./Bradesco/Pagamento/LoteTrailing.coffee'),
-            Detail: require('./Bradesco/Pagamento/Pagamento.coffee'),
-            Detail2: require('./Bradesco/Pagamento/Pagamento2.coffee'),
-            Constants: require('./Bradesco/Pagamento/Constants.coffee')
+            LoteHeader: require('./Bradesco/Pagamento/LoteHeader.js'),
+            LoteTrailing: require('./Bradesco/Pagamento/LoteTrailing.js'),
+            Detail: require('./Bradesco/Pagamento/Pagamento.js'),
+            Detail2: require('./Bradesco/Pagamento/Pagamento2.js'),
+            Constants: require('./Bradesco/Pagamento/Constants.js')
         }
     }
 };

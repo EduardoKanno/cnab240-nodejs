@@ -30,10 +30,15 @@ module.exports = (grunt) ->
                 ./node_modules/.bin/coffee --compile --output cov cnab;
                 ./node_modules/mocha/bin/mocha cov/test -r blanket --reporter mocha-cov-reporter --compilers coffee:coffee-script/register --recursive;
                 ./node_modules/mocha/bin/mocha cov/test -r blanket --reporter html-cov --compilers coffee:coffee-script/register --recursive > coverage.html"
+            compile: "
+                node_modules/.bin/coffee --compile --output cnab/ cnab/;
+                node_modules/.bin/coffee --compile --output layout/ layout/;
+                node_modules/.bin/coffee --compile main.coffee;
+                "
         watch:
             src:
-                files: ['**/**/*.coffee']
-                tasks: ['lint', 'test', 'coverage']
+                files: ['**/**/*.coffee', '*.coffee']
+                tasks: ['lint', 'test', 'coverage', 'compile']
             gruntfile:
                 files: ['Gruntfile.coffee']
 
@@ -49,3 +54,4 @@ module.exports = (grunt) ->
     grunt.registerTask 'lint', ['coffeelint']
     grunt.registerTask 'test', ['mochaTest:progress']
     grunt.registerTask 'coverage', ['exec:cov']
+    grunt.registerTask 'compile', ['exec:compile']

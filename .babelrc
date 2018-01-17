@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "v6.11.5"
+      }
+    }]
+  ],
+  "plugins": [
+      "transform-es2015-destructuring",
+      "transform-es2015-parameters",
+      "transform-object-rest-spread"
+  ]
+}

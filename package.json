@@ -1,11 +1,14 @@
 {
-  "name": "cnab240-nodejs",
+  "name": "cnab240-nodejs-eduardo",
   "version": "0.1.0",
   "description": "Gerador de arquivo de remessa padrão CNAB 240 / HSBC",
   "main": "main.js",
   "scripts": {
     "pretest": "node_modules/.bin/coffeelint -f coffeelint.json src",
-    "test": "mocha test --recursive -R progress --compilers coffee:coffee-script/register"
+    "test": "mocha test --recursive -R progress --compilers coffee:coffee-script/register",
+    "lint": "eslint --ext .js,.es6 src",
+    "precompile": "npm run lint",
+    "compile": "babel --optional runtime cnab --out-dir lib; "
   },
   "repository": {
     "type": "git",
@@ -32,9 +35,18 @@
   },
   "homepage": "https://github.com/s2way/cnab240-nodejs",
   "devDependencies": {
+    "babel": "^5.3.3",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-es2015-parameters": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "1.6.1",
     "blanket": "^1.2.1",
     "coffeelint": "^1.9.4",
     "coffeescript": "^2.1.1",
+    "eslint": "^4.15.0",
+    "eslint-config-google": "^0.9.1",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-coffeelint": "0.0.13",
@@ -49,6 +61,7 @@
     "mocha-multi": "~0.7.1"
   },
   "dependencies": {
+    "babel-runtime": "^5.3.3",
     "expect.js": "^0.3.1",
     "joi": "^9.0.4",
     "lodash": "^4.15.0",

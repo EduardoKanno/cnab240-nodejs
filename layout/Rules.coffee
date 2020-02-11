@@ -17,3 +17,12 @@ module.exports =
             Detail: require './Bradesco/Pagamento/Pagamento.coffee'
             Detail2: require './Bradesco/Pagamento/Pagamento2.coffee'
             Constants: require './Bradesco/Pagamento/Constants.coffee'
+    Sicredi:
+        ArquivoHeader: require './Sicredi/ArquivoHeader.coffee'
+        ArquivoTrailing: require './Sicredi/ArquivoTrailing.coffee'
+        Pagamento:
+            LoteHeader: require './Sicredi/Pagamento/LoteHeader.coffee'
+            LoteTrailing: require './Sicredi/Pagamento/LoteTrailing.coffee'
+            Detail: require './Sicredi/Pagamento/Pagamento.coffee'
+            Detail2: require './Sicredi/Pagamento/Pagamento2.coffee'
+            Constants: require './Sicredi/Pagamento/Constants.coffee'

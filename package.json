@@ -4,8 +4,8 @@
   "description": "Gerador de arquivo de remessa padrão CNAB 240 / HSBC",
   "main": "main.coffee",
   "scripts": {
-    "pretest": "node_modules/.bin/coffeelint -f coffeelint.json src",
-    "test": "mocha test --recursive -R progress --compilers coffee:coffee-script/register"
+    "pretest": "node_modules/.bin/coffeelint -f coffeelint.json cnab/src",
+    "test": "mocha cnab/test --recursive -R progress --compilers coffee:coffee-script/register"
   },
   "repository": {
     "type": "git",
